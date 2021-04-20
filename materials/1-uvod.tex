@@ -25,21 +25,21 @@ Hlavním cílem této práce je zhodnocení optimalizačního frameworku SEAGE z
 
 %Tento cíl se v práci štěpí na menší podcíle, které k němu postupně směřují. Je třeba zajistit ověřitelná a reprodukovatelná data pro kritické porovnání.
 
-Toho je v této práci dosaženo využitím nejlepších hyperheuristik účastníků mezinároní výzvy CHeSC2011 a heuristikami ve frameworku SEAGE.
+Toho bude v této práci dosaženo využitím nejlepších hyperheuristik účastníků mezinároní výzvy CHeSC2011 a heuristikami ve frameworku SEAGE.
 
 %Toho je v této práci dosaženo porovnáním heuristik frameworku SEAGE s nejlepšími hyperheuristikami účastníků mezinárodní výzvy CHeSC2011. 
 
-Aby však bylo možné vyvozovat nějaké závěry, je zapotřebí dat. Především takových, u kterých je možná ověritelnost jejich reprodukovatelností. Tím je v tomto kontextu myšlena množina řešení optimalizačních problémů, získaných vybranými heuristikami.
+Aby však bylo možné vyvozovat nějaké závěry, bude zapotřebí dat. Především takových, u kterých je možná ověritelnost jejich reprodukovatelností. Tím je v tomto kontextu myšlena množina řešení optimalizačních problémů, získaných vybranými heuristikami.
 
-Reprodukovatelnost je zajištěna vlastním rozšířením implementace frameworku HyFlex, který byl právě v rámci CHeSC2011 využit. Stránky výzvy nabízejí referenční řešení jednotlivých účastníků nad množinou použitých intancí problémů (SAT, TSP). V rámci této práce tyto data reprodukuji na svém systému a porovnáním s referenčními ověřuji jejich pravdivost. 
+Reprodukovatelnost plánuji zajištit vlastním rozšířením implementace frameworku HyFlex, který byl právě v rámci CHeSC2011 využit. Stránky výzvy nabízejí referenční řešení jednotlivých účastníků nad množinou použitých intancí problémů (SAT, TSP). V rámci této práce plánuji tyto data reprodukuvat na svém systému a porovnat pak s referenčními. Tím se ověří jejich pravdivost. 
 
-Získaná data se ale nedají sama o sobě využít k vyvozování závěrů. K tomu je zapotřebí jejich odhocnocení. A to takovým způsobem, aby se zajistilo objektivní zhodnocení informace obsažené v nich. Nakonec tak i objektivní porovnání mezi sebou.
+Získaná data se ale nedají sama o sobě využít k vyvozování závěrů. K tomu je zapotřebí jejich odhocnocení. A to takovým způsobem, aby se zajistilo objektivní zhodnocení informace obsažené v nich. Taka aby umožnily porovnání mezi sebou.
 
-Pro tyto účely jsem oba frameworky rozšířil o evaluátor heuristik podle získaných řešení optimalizačních úloh nad jednotlivými doménami problémů. Součástí tohoto evaluátoru je implementovaná nově představená metrika. Myšlenka za ní je velice jednoduchá. Namapovat výsledek heuristik  na interval [0,1]. Kde nula značí snadno dostupné řešení (náhodným, nebo hladovým prohledávání). A naopak jednička výsledek optimální.
+Pro tyto účely bude třeba využít nebo oba frameworky rozšířit o evaluátor heuristik podle získaných řešení optimalizačních úloh nad jednotlivými doménami problémů.
 
-Metrika je taktéž využita v implementaci nové hyperheuristiky ve frameworku SEAGE.
+Pro demonstraci frameworku SEAGE v rámci něj vytvořím novou hyperheurisitku, využávající vylepšení získané z pozorování předchozích experimentů.
 
-Nad získanými výstupy evaluátoru vykonávám sérii experimentů k porovnání heuristik mezi sebou. Získané výsledky prezentuji v kapitole Experimenty.
+Na závěr provedu sérii experimentů za použití nově implementovaného evaluátoru a ze získaných poznatků vyvodím závěry o frameworku SEAGE.
 
 %---------------------------------------------------------------
 \section{Aktuální stav výzkumu hyperheuristik}
