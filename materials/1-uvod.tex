@@ -35,8 +35,11 @@ Reprodukovatelnost je zajištěna vlastním rozšířením implementace framewor
 
 Získaná data se ale nedají sama o sobě využít k vyvozování závěrů. K tomu je zapotřebí jejich odhocnocení. A to takovým způsobem, aby se zajistilo objektivní zhodnocení informace obsažené v nich. Nakonec tak i objektivní porovnání mezi sebou.
 
+Pro tyto účely jsem oba frameworky rozšířil o evaluátor heuristik podle získaných řešení optimalizačních úloh nad jednotlivými doménami problémů. Součástí tohoto evaluátoru je implementovaná nově představená metrika. Myšlenka za ní je velice jednoduchá. Namapovat výsledek heuristik  na interval [0,1]. Kde nula značí snadno dostupné řešení (náhodným, nebo hladovým prohledávání). A naopak jednička výsledek optimální.
 
+Metrika je taktéž využita v implementaci nové hyperheuristiky ve frameworku SEAGE.
 
+Nad získanými výstupy evaluátoru vykonávám sérii experimentů k porovnání heuristik mezi sebou. Získané výsledky prezentuji v kapitole Experimenty.
 
 %---------------------------------------------------------------
 \section{Aktuální stav výzkumu hyperheuristik}
